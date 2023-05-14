@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="with=device-width, inital-scale=1.0">
+	<title>Tyrant Website</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<section class="header">
+		<nav>
+			<a href="index.html"><img src="images/logo.png"></a>
+			<div class="nav-links" id="navLinks">
+				<i class="fa fa-times" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="">HOME</a></li>
+					<li><a href="">ABOUT</a></li>
+					<li><a href="">ART</a></li>
+					<li><a href="">CONTACT</a></li>
+				</ul>
+			</div>
+			<i class="fa fa-bars" onclick="showMenu()"></i>
+		</nav>
+	<div class="text-box">
+		<h1>Placholder</h1>
+		<p>band exists</p>
+		<a href="" class="hero-btn">Listen here</a>
+	</div>
+	</section>
+
+	<!---------------About------------------------>
+	<section class="about">
+		<h1>Members</h1>
+		<!--<p>aljhfalfdhaslkdhalskdhalkh</p>-->
+		<div class="row">
+			<div class="member-col">
+				<h3>Guitar</h3>
+				<img src="images/guitar.png" class="member-img">
+				<div class-"overlay">
+					<div class="overlay-text">fzdghsedfhsdfhsdhsdfghsdfghds
+					</div>
+				</div>
+			</div>
+			<div class="member-col">
+				<h3>Bass</h3>
+				<img src="images/bass.png" class="member-img">
+				<div class-"overlay">
+					<div class="overlay-text">fzdghsedfhsdfhsdhsdfghsdfghds
+					</div>
+				</div>
+			</div>
+			<div class="member-col">
+				<h3>Drums</h3>
+				<img src="images/drums.png" class="member-img">
+				<div class-"overlay">
+					<div class="overlay-text">fzdghsedfhsdfhsdhsdfghsdfghds
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!---------------Javascript menu-------------->
+<script>
+	var navLinks = document.getElementById("navLinks");
+	function showMenu(){
+		navLinks.style.right = "0";
+	}
+	function hideMenu(){
+		navLinks.style.right = "-250px";
+	}
+</script>
+</body>
+</html>
+
+<!---------------footer-------------->
+<section class="footer">
+	<h2>kgkg</h2>
+	<p>aljhfalfdhaslkdhalskdhalkh</p>
+</section>
