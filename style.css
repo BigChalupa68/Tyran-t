@@ -41,6 +41,10 @@ nav{
 }
 nav img{
 	width: 120px;
+	transition: 0.5s;
+}
+nav img:hover{
+	filter: invert(100%);
 }
 .nav-links{
 	flex: 1;
@@ -125,7 +129,7 @@ nav .fa{
 		transition: 1s;
 	}
 	.text-box h1{
-		font-size: 100px;
+		font-size: 150px;
 	}
 	nav .fa{
 		display: block;
@@ -190,6 +194,10 @@ h3{
 .member-img{
 	max-width: 60%;
 	height: 200px;
+	transition: 0.5s;
+}
+.member-img:hover{
+	filter: invert(100%);
 }
 @media(max-width: 1350px){
 	.row{
@@ -206,4 +214,10 @@ h3{
 	  margin-bottem: 25;
 	  margin-top: 22;
 	  margin-weight: 600;
+ }
+ .icons .fa{
+	color: #b800e6;
+	margin: 0 13px;
+	cursor: pointer;
+	padding: 18px 0;
  }
