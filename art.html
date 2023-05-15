@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="with=device-width, inital-scale=1.0">
+	<title>Tyrant Website</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<section class="art-header">
+		<nav>
+			<a href="index.html"><img src="images/logo.png"></a>
+			<div class="nav-links" id="navLinks">
+				<i class="fa fa-times" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="about.html">ABOUT</a></li>
+					<li><a href="art.html">ART</a></li>
+					<!--<li><a href="contact.html">CONTACT</a></li>-->
+				</ul>
+			</div>
+			<i class="fa fa-bars" onclick="showMenu()"></i>
+		</nav>
+	<div class="art-text-box">
+		<h1>Art</h1>
+	</div>
+	</section>
+		
+	<section class="art-gallery">
+		<div class="row">
+			<div class="art-col">
+				<img class="myImg" src="images/logo1.png" alt="11111" width="300" height="300">
+
+				<div id="myModal" class="modal">
+				 <span class="close">&times;</span>
+				<img class="modal-content" id="img01">
+				 <div id="caption"></div>
+				</div>
+			</div>
+			<div class="art-col">
+				<img class="myImg" src="images/logo2.png" alt="22222" width="300" height="300">
+
+				<div id="myModal" class="modal">
+				 <span class="close">&times;</span>
+				<img class="modal-content" id="img02">
+				 <div id="caption"></div>
+				</div>
+			</div>
+			<div class="art-col">
+				<img class="myImg" src="images/logo3.png" alt="3333" width="300" height="300">
+
+				<div id="myModal" class="modal">
+				 <span class="close">&times;</span>
+				<img class="modal-content" id="img03">
+				 <div id="caption"></div>
+				</div>
+			</div>
+			<div class="art-col">
+				<img class="myImg" src="images/logo4.png" alt="44444" width="300" height="300">
+
+				<div id="myModal" class="modal">
+				 <span class="close">&times;</span>
+				<img class="modal-content" id="img04">
+				 <div id="caption"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!---------------Javascript menu-------------->
+<script>
+	var navLinks = document.getElementById("navLinks");
+	function showMenu(){
+		navLinks.style.right = "0";
+	}
+	function hideMenu(){
+		navLinks.style.right = "-250px";
+	}
+
+
+	 // Get the modal
+	var modal = document.getElementById('myModal');
+
+	// Get the image and insert it inside the modal - use its "alt" text as a caption
+	var modal = document.getElementById("myModal");
+	var i;
+
+	var img = document.getElementsByClassName("myImg");
+	var modalImg = document.getElementById("img01");
+
+	for(i=0;i< img.length;i++)
+	{    
+		img[i].onclick = function(){
+		modal.style.display = "block";
+			modalImg.src = this.src;
+	}
+}
+
+
+	// Get the <span> element that closes the modal
+	var span = document.getElementsByClassName("close")[0];
+
+	// When the user clicks on <span> (x), close the modal
+	span.onclick = function() { 
+		modal.style.display = "none";
+	}
+</script>
+</body>
+</html>
+
+<!---------------footer-------------->
+<section class="footer">
+	<h2>About</h2>
+	<p>We are a band dedicated to making music, and expecting you not to read this.</p>
+	<div class="icons">
+		<a href="https://www.facebook.com/profile.php?id=100091226452114&mibextid=ZbWKwL">
+			<i class="fa fa-facebook" ></i>
+		</a>
+		<a href="https://www.instagram.com/tyrant406/">
+			<i class="fa fa-instagram"></i>
+		</a>
+		<a href="https://open.spotify.com">
+			<i class="fa fa-spotify"></i>
+		</a>
+	</div>
+	<p> Made by me<p>
+</section>
